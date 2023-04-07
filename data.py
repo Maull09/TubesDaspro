@@ -3,6 +3,7 @@ users = [] # Matriks data user
 candi = [] # Matriks data candi
 bahan_bangunan = [] # Data bahan bangunan
 login_status = "false"
+role = "null"
 
 def load(filename,data):
     data = []

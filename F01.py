@@ -14,6 +14,7 @@ def login() :
                 u_found = True  
                 p_found = True
                 data.login_status = "true"
+                data.role = data.users[i][2]
                 break
             else:
                 u_found = True  

@@ -1,6 +1,9 @@
 import data
 from F01 import login
 from F02 import logout
+from F05 import ubahjin
+from F15 import help
+
 
 def run(command : str) :
     if command == "login" :
@@ -16,7 +19,7 @@ def run(command : str) :
     elif command == "hapusjin" :
         None
     elif command == "ubahjin" :
-        None
+        ubahjin()
     elif command == "bangun" :
         None
     elif command == "kumpul" :
@@ -36,6 +39,6 @@ def run(command : str) :
     elif command == "save" :
         None
     elif command == "help" :
-        None
+        help()
     elif command == "exit" :
         None
