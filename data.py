@@ -4,6 +4,11 @@ candi = [] # Matriks data candi
 bahan_bangunan = [] # Data bahan bangunan
 login_status = "false"
 role = "null"
+def count(matrix):
+    cnt = 0
+    for i in matrix:
+        cnt += 1
+    return cnt
 
 def load(filename,data):
     data = []
@@ -20,6 +25,7 @@ def load(filename,data):
             row.append(cell[:-1]) # exclude newline character
             data.append(row)
     return data
+
 
 users = load("user.csv", users)
 candi = load("candi.csv", candi)
