@@ -6,8 +6,8 @@ def login() :
     u_found = False
     p_found = False
     # iterate over the rows in the users list
-    i = 1 
-    while data.users[i][0] != "stop":
+    
+    for i in range(1000):
         # check if the username and password match
         if username == data.users[i][0]:
             if password == data.users[i][1]:
