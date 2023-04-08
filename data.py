@@ -4,6 +4,11 @@ bahan_bangunan = [[0 for i in range(3)] for i in range(1000)] # Data bahan bangu
 #static array
 login_status = "false"
 role = "null"
+def count(matrix):
+    cnt = 0
+    for i in matrix:
+        cnt += 1
+    return cnt
 
 
 def load(file,var,jk):
@@ -31,8 +36,7 @@ def load(file,var,jk):
                     var[j][k] = data + line[i]
                 else:
                     data += line[i]
-            j += 1
-                
+            j += 1                
         return var
 
 def length(list):
@@ -50,9 +54,7 @@ def strip_enter(teks):
     return result
 
 
-
-
-
 users = load("user.csv", users, 3)
 candi = load("candi.csv", candi, 5)
 bahan_bangunan = load("bahan_bangunan.csv", bahan_bangunan, 3)
+
