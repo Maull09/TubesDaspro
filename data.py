@@ -4,12 +4,6 @@ bahan_bangunan = [[0 for i in range(3)] for i in range(1000)] # Data bahan bangu
 #static array
 login_status = "false"
 role = "null"
-def count(matrix):
-    cnt = 0
-    for i in matrix:
-        cnt += 1
-    return cnt
-
 
 def load(file,var,jk):
     with open(file) as f :
