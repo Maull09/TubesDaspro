@@ -1,6 +1,6 @@
-users = [[0 for i in range(3)] for i in range(1000)] # Matriks data user
-candi = [[0 for i in range(5)] for i in range(1000)] # Matriks data candi
-bahan_bangunan = [[0 for i in range(3)] for i in range(1000)] # Data bahan bangunan
+users = [[0 for i in range(3)] for i in range(1001)] # Matriks data user
+candi = [[0 for i in range(5)] for i in range(1001)] # Matriks data candi
+bahan_bangunan = [[0 for i in range(3)] for i in range(4)] # Data bahan bangunan
 #static array
 login_status = "false"
 role = "null"
@@ -51,4 +51,5 @@ def strip_enter(teks):
 users = load("user.csv", users, 3)
 candi = load("candi.csv", candi, 5)
 bahan_bangunan = load("bahan_bangunan.csv", bahan_bangunan, 3)
+iterasi = 0
 
