@@ -1,9 +1,12 @@
+
+
 users = [[0 for i in range(3)] for i in range(1000)] # Matriks data user
 candi = [[0 for i in range(5)] for i in range(1000)] # Matriks data candi
 bahan_bangunan = [[0 for i in range(3)] for i in range(1000)] # Data bahan bangunan
 #static array
 login_status = "false"
 role = "null"
+usernamee = "null"
 
 
 def load(file,var,jk):

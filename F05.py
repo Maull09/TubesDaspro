@@ -13,20 +13,17 @@ def ubahjin() :
                 if ubahtipe == "Y" :
                     data.users[i][2] = "pembangun"
                     ubahrolejin = True
-                    break
                 else :
                     ubahrolejin = False
-                    break
             else :
                 peubah = True
                 ubahtipe = input("Jin ini bertipe “Pembangun”. Yakin ingin mengubah ke tipe “Pengumpul” (Y/N)? ")
                 if ubahtipe == "Y" :
                     data.users[i][2] = "pengumpul"
                     ubahrolejin = True
-                    break
                 else :
                     ubahrolejin = False
-                    break
+                
             
         
 

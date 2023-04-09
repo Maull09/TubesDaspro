@@ -3,6 +3,7 @@ import data
 def login() :
     username = input("Username : ")
     password = input("Password : ")
+    data.usernamee = username
     u_found = False
     p_found = False
     # iterate over the rows in the users list
@@ -15,11 +16,9 @@ def login() :
                 p_found = True
                 data.login_status = "true"
                 data.role = data.users[i][2]
-                break
             else:
                 u_found = True  
                 p_found = False
-                break
         i += 1
 
     if u_found == True and p_found == True :
