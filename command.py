@@ -3,6 +3,9 @@ import data
 import F01
 from F02 import logout
 from F05 import ubahjin
+import F06
+import F07
+import F08
 from F15 import help
 
 
@@ -27,11 +30,11 @@ def run(command : str) :
     elif command == "ubahjin" :
         ubahjin()
     elif command == "bangun" :
-        None
+        F06.bangun()
     elif command == "kumpul" :
-        None
+        F07.kumpul()
     elif command == "batchkumpul" :
-        None
+        F08.batchkumpul()
     elif command == "batchbangun" :
         None
     elif command == "laporanjin" :
