@@ -1,9 +1,10 @@
 import os
 import csv
+import data
 
 
 def save(file_name,var):
-    folder_name = input("Masukkan nama folder: ")
+    folder_name = data.load_folder_name
     file_path = os.path.join(folder_name, file_name)
 
     if os.path.exists(folder_name):

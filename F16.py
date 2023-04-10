@@ -1,6 +1,5 @@
 from F14 import save
 import data
-
 def exit():
     while True:
         ubah = input("Apakah Anda mau melakukan penyimpanan file yang sudah diubah? (y/n) ")

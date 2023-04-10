@@ -79,5 +79,3 @@ silahkan pakai command berikut
 2. kumpul
     Untuk membangun candi.
 ''')
-
-help()
