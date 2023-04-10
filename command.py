@@ -3,6 +3,7 @@ import data
 import F01
 from F02 import logout
 from F03 import summonjin
+from F04 import hapusjin
 from F05 import ubahjin
 import F06
 import F07
@@ -27,7 +28,7 @@ def run(command : str) :
     elif command == "summonjin" :
         summonjin()
     elif command == "hapusjin" :
-        None
+        hapusjin()
     elif command == "ubahjin" :
         ubahjin()
     elif command == "bangun" :
