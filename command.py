@@ -8,7 +8,14 @@ from F05 import ubahjin
 import F06
 import F07
 import F08
+from F09 import laporanjin 
+from F10 import laporancandi
+from F11 import hancurkancandi
+from F12 import ayamberkokok
+# from F13 import 
+from F14 import save
 from F15 import help
+from F16 import exit
 
 
 def run(command : str) :
@@ -38,19 +45,21 @@ def run(command : str) :
     elif command == "batchkumpul" :
         F08.batchkumpul()
     elif command == "batchbangun" :
-        None
+        F08.batchbangun()
     elif command == "laporanjin" :
-        None
+        laporanjin()
     elif command == "laporancandi" :
-        None
+        laporancandi()
     elif command == "hancurkancandi" :
-        None
+        hancurkancandi()
     elif command == "ayamberkokok" :
-        None
+        ayamberkokok()
     elif command == "save" :
-        None
+        save("user.csv", data.users)
+        save("bahan_bangunan.csv", data.bahan_bangunan)
+        save("candi.csv", data.candi)
     elif command == "help" :
         help()
     elif command == "exit" :
-        None
+        exit()
 

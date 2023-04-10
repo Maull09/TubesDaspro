@@ -19,6 +19,7 @@ def batchkumpul():
         print("Jin menemukan "+str(pasirT)+" pasir, "+str(batuT)+" batu, dan "+str(airT)+" air.")
     else:
         print("Kumpul gagal. Anda tidak punya jin pengumpul. Silahkan summon terlebih dahulu.")
+        
 def batchbangun():
     n = save.hitung_jin("pembangun")  #jumlah jin pembangun
     i = 0

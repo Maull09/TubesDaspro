@@ -30,6 +30,7 @@ def hitung_candi():
         else:
             cnt += 1
     return cnt
+
 def hitung_jin(type):
     cnt = 0
     for i in data.users:
