@@ -1,6 +1,3 @@
-import data
-import save
-import sys
 
 def exit():
     while True:

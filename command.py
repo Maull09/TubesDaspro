@@ -2,6 +2,7 @@ import data
 
 import F01
 from F02 import logout
+from F03 import summonjin
 from F05 import ubahjin
 import F06
 import F07
@@ -24,7 +25,7 @@ def run(command : str) :
             print("Logout gagal")
             print(f"Anda belum login, silahkan login terlebih dahulu sebelum melakukan logout")
     elif command == "summonjin" :
-        None
+        summonjin()
     elif command == "hapusjin" :
         None
     elif command == "ubahjin" :
