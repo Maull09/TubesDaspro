@@ -24,10 +24,6 @@ def ubahjin() :
                 else :
                     ubahrolejin = False
                 
-            
-        
-
-
     if peubah == True and ubahrolejin == True :
         print("Jin telah berhasil diubah")
     elif peubah == True and ubahrolejin == False :

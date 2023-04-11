@@ -1,4 +1,5 @@
 import data
+import save
 import F01
 from F02 import logout
 from F03 import summonjin
@@ -31,7 +32,10 @@ def run(command : str) :
             print(f"Anda belum login, silahkan login terlebih dahulu sebelum melakukan logout")
     elif command == "summonjin" :
         if data.role == "bandung_bondowoso" :
-            summonjin()
+            if save.hitung_jin > 100 :
+                print("Jumlah Jin telah maksimal! (100 jin). Bandung tidak dapat men-summon lebih dari itu")
+            else :
+                summonjin()
         else :
             ("Maaf anda tidak memiliki akses")
     elif command == "hapusjin" :

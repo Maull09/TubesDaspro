@@ -31,5 +31,13 @@ def laporanjin() :
 
     #handling letak alfabetis
     #print
+    print(f"Total Jin : {total}")
+    print(f"Total Jin Pengumpul : {jumlah_pengumpul}")
+    print(f"Total Jin Pembangun : {jumlah_pembangun}")
+    print(f"Jin Terajin : {terajin}")
+    print(f"Jin Termalas : {termalas}")
+    # print(f"Jumlah Pasir : {}")
+    # print(f"Jumlah Air : {}")
+    # print(f"Jumlah Batu : {}")
 
                 

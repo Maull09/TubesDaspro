@@ -33,6 +33,10 @@ def laporancandi() :
             hargacandi = hasil_hargacandi
             i_termurah = i
 
+    print("Total Candi: ", total_candi)
+    print("Total Pasir yang digunakan: ", total_pasir)
+    print("Total Batu yang digunakan: ", total_batu)
+    print("Total Air yang digunakan: ", total_air)
     print("ID Candi Termahal: ", str(i_termahal))
     print("ID Candi Termurah: ", str(i_termurah))
 
