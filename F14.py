@@ -3,7 +3,7 @@ import csv
 import data
 
 
-def save(file_name,var):
+def save(file_name,var,k,b):
     folder_name = data.load_folder_name
     file_path = os.path.join(folder_name, file_name)
 
@@ -16,11 +16,11 @@ def save(file_name,var):
         print(f"Folder {folder_name} belum ada. Membuat folder dan file baru.")
         os.makedirs(folder_name)
         
-    with open(file_path, "w", newline="") as f:
-        writer = csv.writer(f, delimiter=";")
-        for row in var:
-            writer.writerow(row)
+    with open(file_path, "w") as f:
+        for i in range(b) :
+            for j in range(k) :
+                f.write(str(var[i][j])+";")
+            f.write(str(var[i][k])+"\n")        
 
     print(f"Berhasil menyimpan data di folder {folder_name}!")
-
 
