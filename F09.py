@@ -16,18 +16,47 @@ def laporanjin() :
     
     max_candi = data.users[3][3]
     min_candi = data.users[3][3]
-    terajin = "null"
-    termalas = "null"
+    terajin = data.users[3][0]
+    termalas = data.users[3][0]
 
+    #cari candi terbanyak
     for i in range(101) :
-        if data.users[i][3] > max_candi :
+        if data.users[i][3] >= max_candi :
             max_candi = data.users[i][3]
-            terajin = data.users[i][1]
-        
+
+    #mencari jin terajin dengan candi terbanyak sesuai leksikografis
+    for i in range(101) :
+        if data.users[i][3] == max_candi :
+            if data.users[i][j] > terajin :
+                terajin = data.users[i][3]
+
+    #mencari candi tersedikit        
     for i in range(101) :
         if data.users[i][3] < min_candi :
             min_candi = data.users[i][3]
-            termalas = data.users[i][1]
+
+    #mencari jin termalas dengan candi tersedikit sesuai leksikografis
+    for i in range(101) :
+        if data.users[i][3] == min_candi :
+            if data.users[i][j] < terajin :
+                terajin = data.users[i][3]
+
+    pasir = 0
+    air = 0
+    batu = 0
+
+    for i in range(101) :
+        if data.candi[i][2] == terajin :
+            for j in range(101) :
+                pasir += data.candi[i][3] 
+            for j in range(101) :
+                air += data.candi[i][4] 
+            for j in range(101) :
+                batu += data.candi[i][5]
+                
+
+
+
 
     #handling letak alfabetis
     #print
@@ -36,8 +65,8 @@ def laporanjin() :
     print(f"Total Jin Pembangun : {jumlah_pembangun}")
     print(f"Jin Terajin : {terajin}")
     print(f"Jin Termalas : {termalas}")
-    # print(f"Jumlah Pasir : {}")
-    # print(f"Jumlah Air : {}")
-    # print(f"Jumlah Batu : {}")
+    print(f"Jumlah Pasir : {pasir}")
+    print(f"Jumlah Air : {air}")
+    print(f"Jumlah Batu : {batu}")
 
                 

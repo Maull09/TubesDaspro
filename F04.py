@@ -11,6 +11,9 @@ def hapusjin() :
                 for j in range(3) :
                     data.users[i][j] = 0
                     hapus = True
+        if data.candi[i][2] == username :
+            for k in range(5) :
+                data.candi[i][k] = 0
 
         else :
             hapus = False
