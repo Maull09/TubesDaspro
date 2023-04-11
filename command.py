@@ -30,33 +30,69 @@ def run(command : str) :
             print("Logout gagal")
             print(f"Anda belum login, silahkan login terlebih dahulu sebelum melakukan logout")
     elif command == "summonjin" :
-        summonjin()
+        if data.role == "bandung_bondowoso" :
+            summonjin()
+        else :
+            ("Maaf anda tidak memiliki akses")
     elif command == "hapusjin" :
-        hapusjin()
+        if data.role == "bandung_bondowoso" :
+            hapusjin()
+        else :
+            ("Maaf anda tidak memiliki akses")
     elif command == "ubahjin" :
-        ubahjin()
+        if data.role == "bandung_bondowoso" :
+            ubahjin()
+        else :
+            ("Maaf anda tidak memiliki akses")
     elif command == "bangun" :
-        F06.bangun()
+        if data.role == "pembangun" :
+            F06.bangun()
+        else :
+            ("Maaf anda tidak memiliki akses")
     elif command == "kumpul" :
-        F07.kumpul()
+        if data.role == "pengumpul" :
+            F07.kumpul()
+        else :
+            ("Maaf anda tidak memiliki akses")
     elif command == "batchkumpul" :
-        F08.batchkumpul()
+        if data.role == "bandung_bondowoso" :
+            F08.batchkumpul()
+        else :
+            ("Maaf anda tidak memiliki akses")
     elif command == "batchbangun" :
-        F08.batchbangun()
+        if data.role == "bandung_bondowoso" :
+            F08.batchbangun()
+        else :
+            ("Maaf anda tidak memiliki akses")
     elif command == "laporanjin" :
-        laporanjin()
+        if data.role == "bandung_bondowoso" :
+            laporanjin()
+        else :
+            ("Maaf anda tidak memiliki akses")
     elif command == "laporancandi" :
-        laporancandi()
+        if data.role == "bandung_bondowoso" :
+            laporancandi()
+        else :
+            ("Maaf anda tidak memiliki akses")
     elif command == "hancurkancandi" :
-        hancurkancandi()
+        if data.role == "roro_jonggrang" :
+            hancurkancandi()
+        else :
+            ("Maaf anda tidak memiliki akses")
     elif command == "ayamberkokok" :
-        ayamberkokok()
+        if data.role == "roro_jonggrang" :
+            ayamberkokok()
+        else :
+            ("Maaf anda tidak memiliki akses")
     elif command == "save" :
-        folder_name = input("Masukkan nama folder: ")
-        data.load_folder_name = folder_name
-        F14.save("user.csv", data.users)
-        F14.save("bahan_bangunan.csv", data.bahan_bangunan)
-        F14.save("candi.csv", data.candi)
+        if data.role == "bandung_bondowoso" or data.role == "roro_jonggrang" :
+            folder_name = input("Masukkan nama folder: ")
+            data.load_folder_name = folder_name
+            F14.save("user.csv", data.users, 3, 101)
+            F14.save("bahan_bangunan.csv", data.bahan_bangunan, 2, 4)
+            F14.save("candi.csv", data.candi, 4, 101)
+        else :
+            ("Maaf anda tidak memiliki akses") 
     elif command == "help" :
         F15.help()
     elif command == "exit" :

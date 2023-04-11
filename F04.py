@@ -2,7 +2,7 @@ import data
 
 def hapusjin() :
     hapus = False
-    username = input()
+    username = input("Masukkan username jin : ")
 
     for i in range(1,1001) :
         if data.users[i][0] == username :
