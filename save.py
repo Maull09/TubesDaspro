@@ -1,9 +1,18 @@
 import data
+def hasil_kerja_jin(name,role):
+    stop = False
+    i = 0
+    while not stop and (i < data.length(data.users)):
+        if data.users[i][2] == role and data.users[i][0] ==name :
+            data.users[i][3] = int(data.users[i][3]) + 1
+            stop = True
+        i += 1
+
 def sAve(type, data1):   
     if type=="bangun":
         n = hitung_candi() #data =[id,pembuat, pasir, batu, air]
         data.candi[n+1] = [data1[0],data1[1],data1[2],data1[3],data1[4]] #catat bertambahnya jumlah candi
-        sAve("kumpul", [-data1[2],-data1[3],-data1[4]]) #catat berkurangnya stok
+        sAve("kumpul", [-data1[2],-data1[3],-data1[4]]) #catat berkurangnya stok dengan memanggil fungsi diri sendiri sekali
     else:
         #data = [pasir, batu, air]
         data.bahan_bangunan[1] = ["pasir", "Digunakan untuk merekatkan batu",int(data.bahan_bangunan[1][2]) + data1[0]]
