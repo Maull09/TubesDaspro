@@ -1,12 +1,11 @@
 import data
 def hasil_kerja_jin(name,role):
-    stop = False
     i = 0
-    while not stop and (i < data.length(data.users)):
+    for i in range(1001) :
         if data.users[i][2] == role and data.users[i][0] ==name :
             data.users[i][3] = int(data.users[i][3]) + 1
-            stop = True
-        i += 1
+
+        
 
 def sAve(type, data1):   
     if type=="bangun":
