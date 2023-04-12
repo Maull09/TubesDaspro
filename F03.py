@@ -29,7 +29,7 @@ Jenis jin yang dapat dipanggil:
         if data.users[i][0] == 0:
             data.users[i][0] = username_jin
             password_jin = input("Masukkan password jin: ")
-            while len(password_jin) < 5 and len(password_jin) > 25:
+            while len(password_jin) < 5 or len(password_jin) > 25:
                 print("Password panjangnya harus 5-25 karakter!")
                 password_jin = input("Masukkan password jin: ")
 
