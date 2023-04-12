@@ -25,9 +25,9 @@ def run(command : str) :
             else : #jika dia sudah login maka login akan gagal
                 print("Login gagal")
                 print(f"Anda telah login dengan username {data.usernamee}, silahkan logout terlebih dahulu sebelum melakukan login kembali")
-        elif command == "help" :
+        elif command == "help" : #fungsi help (F15)
             F15.help()
-        elif command == "exit" :
+        elif command == "exit" : #fungsi exit (F16)
             exit()
         else :
             print("Silahkan login dahulu untuk mengakses fungsi tersebut")
@@ -114,7 +114,7 @@ def run(command : str) :
                 F14.save("candi.csv", data.candi, 4, 101)
             else :
                 ("Maaf anda tidak memiliki akses") #username tidak memiliki akses ke fungsi
-        elif command == "help" :
+        elif command == "help" : #fungsi help (F15)
             F15.help()
-        elif command == "exit" :
+        elif command == "exit" : #fungsi exit (F16)
             exit()
