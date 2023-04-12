@@ -1,13 +1,14 @@
 import data
 
 def login() :
-    username = input("Username : ")
-    password = input("Password : ")
+    username = input("Username : ") #meminta masukkan username
+    password = input("Password : ") #meminta masukkan password
     data.usernamee = username
     u_found = False
     p_found = False
     # iterate over the rows in the users list
     
+    #mengecek apakah akun tersebut ada atau tidak, jika tidak, login gagal
     for i in range(1000):
         # check if the username and password match
         if username == data.users[i][0]:
@@ -19,7 +20,7 @@ def login() :
             else:
                 u_found = True  
                 p_found = False
-        i += 1
+
 
     if u_found == True and p_found == True :
         print(f"Selamat datang, {username}!")

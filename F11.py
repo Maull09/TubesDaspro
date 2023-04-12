@@ -1,5 +1,5 @@
 import data
-import save
+
 
 def hancurkancandi():
     id = input("Masukkan ID candi: ")

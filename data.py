@@ -1,13 +1,14 @@
-users = [[0 for i in range(3)] for i in range(1001)] # Matriks data user
+users = [[0 for i in range(4)] for i in range(1001)] # Matriks data user
 candi = [[0 for i in range(5)] for i in range(1001)] # Matriks data candi
 bahan_bangunan = [[0 for i in range(3)] for i in range(4)] # Data bahan bangunan
 #static array
 login_status = "false"
 role = "null"
 usernamee = "null"
+load_folder_name = "null"
 
 
-def load(file,var,jk):
+def loading(file,var,jk):
     with open(file) as f :
         raw_lines = f.readlines()
         lines = []
@@ -50,8 +51,7 @@ def strip_enter(teks):
     return result
 
 
-users = load("user.csv", users, 3)
-candi = load("candi.csv", candi, 5)
-bahan_bangunan = load("bahan_bangunan.csv", bahan_bangunan, 3)
+users = loading("user.csv", users, 4)
+candi = loading("candi.csv", candi, 5)
+bahan_bangunan = loading("bahan_bangunan.csv", bahan_bangunan, 3)
 iterasi = 0
-

@@ -5,9 +5,10 @@ def ubahjin() :
     peubah = False
     ubahrolejin = False
     
-    for i in range(100) :
-        if data.users[i][0] == username :
-            if data.users[i][2] == "pengumpul" :
+    for i in range(1001) :
+        if data.users[i][0] == username : #mengecek apakah ada jin dengan username tersebut
+            #jika tipe jin pengumpul maka akan diubah ke pembangun
+            if data.users[i][2] == "pengumpul" : 
                 peubah = True
                 ubahtipe = input("Jin ini bertipe “Pengumpul”. Yakin ingin mengubah ke tipe “Pembangun” (Y/N)? ")
                 if ubahtipe == "Y" :
@@ -15,6 +16,7 @@ def ubahjin() :
                     ubahrolejin = True
                 else :
                     ubahrolejin = False
+            #jika tipe jin pembangun maka akan diubah ke pengumpul
             else :
                 peubah = True
                 ubahtipe = input("Jin ini bertipe “Pembangun”. Yakin ingin mengubah ke tipe “Pengumpul” (Y/N)? ")
@@ -24,10 +26,6 @@ def ubahjin() :
                 else :
                     ubahrolejin = False
                 
-            
-        
-
-
     if peubah == True and ubahrolejin == True :
         print("Jin telah berhasil diubah")
     elif peubah == True and ubahrolejin == False :
