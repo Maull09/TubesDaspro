@@ -51,7 +51,7 @@ def strip_enter(teks):
     return result
 
 
-users = loading("csv\user.csv", users, 4)
-candi = loading("csv\candi.csv", candi, 5)
-bahan_bangunan = loading("csv\bahan_bangunan.csv", bahan_bangunan, 3)
+users = loading("csv/user.csv", users, 4)
+candi = loading("csv/candi.csv", candi, 5)
+bahan_bangunan = loading("csv/bahan_bangunan.csv", bahan_bangunan, 3)
 iterasi = 0
