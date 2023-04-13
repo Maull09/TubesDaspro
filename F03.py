@@ -34,6 +34,10 @@ Jenis jin yang dapat dipanggil:
                 password_jin = input("Masukkan password jin: ")
             # Memanggil jin
             data.users[i][1] = password_jin
+            if panggil_jin == 1 :
+                data.users[i][2] == "pengumpul"
+            else :
+                data.users[i][2] == "pembangun"
             print("Mengumpulkan sesajen...")
             print("Menyerahkan sesajen...")
             print("Membacakan mantra...")

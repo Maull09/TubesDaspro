@@ -13,7 +13,7 @@ if __name__ == "__main__":
     parser.add_argument("folder_name", help="Nama folder yang berisi file penyimpanan")
     args = parser.parse_args()
 
-    folder_name = args.folder_name
+    folder_name = "save\\"+ args.folder_name
     if not os.path.exists(folder_name):
         print(f"Folder \"{folder_name}\" tidak ditemukan.")
     else:

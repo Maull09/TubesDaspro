@@ -6,6 +6,7 @@ login_status = "false"
 role = "null"
 usernamee = "null"
 load_folder_name = "null"
+keluar = False
 
 
 def loading(file,var,jk):
