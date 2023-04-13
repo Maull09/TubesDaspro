@@ -9,27 +9,27 @@ def laporancandi() :
     total_air = 0
     # Menentukan total_pasir, total_batu, dan total_candi
     for i in range (1,1001):
-        if data.users[i][2] != 0:
+        if data.candi[i][1] != 0:
             total_pasir += 1
     for i in range (1, 1001):
-        if data.users[i][3] != 0:
+        if data.candi[i][2] != 0:
             total_batu += 1
     for i in range (1, 1001):
-        if data.users[i][4] != 0:
+        if data.candi[i][3] != 0:
             total_air += 1
     # Menginisiasi variabel i_termahal, i_termurah, hargacandi sesuai dengan rumus yang terdapat di spesifikasi
     i_termahal = 0
     i_termurah = 0
-    hargacandi = 10000*data.users[1][2] + 15000*data.users[1][3] + 7500*data.users[1][4]
+    hargacandi = 10000*int(data.candi[1][2]) + 15000*int(data.candi[1][3]) + 7500*int(data.candi[1][4])
     # Menentukan ID termahal dengan membandingkan variabel hargacandi dengan hasil_hargacandi
     for i in range (1, 1001):
-        hasil_hargacandi = 10000*data.users[i][2] + 15000*data.users[i][3] + 7500*data.users[i][4]
+        hasil_hargacandi = 10000*int(data.candi[i][2]) + 15000*int(data.candi[i][3]) + 7500*int(data.candi[i][4])
         if hargacandi > hasil_hargacandi:
             hargacandi = hasil_hargacandi
             i_termahal = i
     # Menentukan ID termurah dengan membandingkan variabel hargacandi dengan hasil_hargacandi
     for i in range (1, 1001):
-        hasil_hargacandi = 10000*data.users[i][2] + 15000*data.users[i][3] + 7500*data.users[i][4]
+        hasil_hargacandi = 10000*int(data.candi[i][2]) + 15000*int(data.candi[i][3]) + 7500*int(data.candi[i][4])
         if hargacandi < hasil_hargacandi:
             hargacandi = hasil_hargacandi
             i_termurah = i

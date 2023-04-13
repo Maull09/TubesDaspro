@@ -2,6 +2,7 @@ import command
 import os
 import argparse
 import data
+import F06
 
 # File: main.py
 def load(folder_name,file_name, var, jk):

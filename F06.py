@@ -19,4 +19,3 @@ def bangun():
     else: 
         print("Bahan bangunan tidak mencukupi.") #bahan tidak mencukupi
         print("Candi tidak bisa dibangun! ")
-
