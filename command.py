@@ -18,7 +18,7 @@ import F16
 
 
 def run(command : str) :
-    if command in ["login","logout","summonjin","hapusjin","ubahjin","bangun","kumpul","batchkumpul","batchbangun","laporanjin","laporancandi","hancurkancandi","ayamberkokok","save","help","exit"] :
+    if command == "login" or command == "logout" or command == "summonjin" or command == "hapusjin" or command == "ubahjin" or command == "bangun" or command == "kumpul" or command == "batchkumpul" or command == "batchbangun" or command == "laporanjin" or command == "laporancandi" or command == "hancurkancandi" or command == "ayamberkokok" or command == "save" or command == "help" or command == "exit" :
         if data.login_status == "false" :    
             if command == "login" : #fungsi login (F01)
                 F01.login()
