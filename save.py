@@ -36,7 +36,7 @@ def find_nth_role(type,n):  # finding username of nth role in user.csv
 def hitung_candi(): 
     cnt = 0
     for i in range(1,1000):
-        if data.candi[i][1] == 0:
+        if data.candi[i][0] == 0:
             return cnt
         else:
             cnt += 1
