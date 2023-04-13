@@ -50,9 +50,4 @@ def strip_enter(teks):
         i += 1
     return result
 
-
-users = loading("user.csv", users, 4)
-candi = loading("candi.csv", candi, 5)
-bahan_bangunan = loading("bahan_bangunan.csv", bahan_bangunan, 3)
 iterasi = 0
-
