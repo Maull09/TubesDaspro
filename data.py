@@ -52,3 +52,5 @@ def strip_enter(teks):
     return result
 
 iterasi = 0
+
+

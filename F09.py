@@ -28,20 +28,14 @@ def laporanjin() :
         if data.users[i][3] < min_candi :
             min_candi = data.users[i][3]
             termalas = data.users[i][1] # Jin Termalas 
-    
+
     print("Total Jin :",total_jin)
     print("Total Jin Pengumpul :", jumlah_pengumpul)
     print("Total Jin Pembangun :", jumlah_pembangun)
     print("Jin Terajin :", terajin)
     print("Jin Termalas :", termalas)
-    print("Jumlah Pasir :", save.hitung_pasir( ))
-    print("Jumlah Air :", save.hitung_air())
-    print("Jumlah batu :", save.hitung_batu())
-
-   
-    
-
-    #handling letak alfabetis
-    #print
+    print("Jumlah Pasir :", data.bahan_bangunan[1][2])
+    print("Jumlah Air :", data.bahan_bangunan[2][2])
+    print("Jumlah batu :", data.bahan_bangunan[3][2])
 
                 
