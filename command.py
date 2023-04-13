@@ -40,57 +40,57 @@ def run(command : str) :
             else :
                 summonjin()
         else :
-            ("Maaf anda tidak memiliki akses") #username tidak memiliki akses ke fungsi
+            print("Maaf anda tidak memiliki akses") #username tidak memiliki akses ke fungsi
     elif command == "hapusjin" : #fungsi menghapus jin (F04)
         if data.role == "bandung_bondowoso" : #jika role = bandung_bondowoso maka dapat memiliki akses dan dapat mengakses fungsi
             hapusjin()
         else :
-            ("Maaf anda tidak memiliki akses") #username tidak memiliki akses ke fungsi
+            print("Maaf anda tidak memiliki akses") #username tidak memiliki akses ke fungsi
     elif command == "ubahjin" : #fungsi mengubah role jin (F05)
         if data.role == "bandung_bondowoso" : #jika role = bandung_bondowoso maka dapat memiliki akses dan dapat mengakses fungsi
             ubahjin()
         else :
-            ("Maaf anda tidak memiliki akses") #username tidak memiliki akses ke fungsi
+            print("Maaf anda tidak memiliki akses") #username tidak memiliki akses ke fungsi
     elif command == "bangun" : #fungsi membagun candi (F06)
         if data.role == "pembangun" :
             F06.bangun()
         else :
-            ("Maaf anda tidak memiliki akses") #username tidak memiliki akses ke fungsi
+            print("Maaf anda tidak memiliki akses") #username tidak memiliki akses ke fungsi
     elif command == "kumpul" : #fungsi mengumpulkan bahan candi (F07)
         if data.role == "pengumpul" :
             F07.kumpul()
         else :
-            ("Maaf anda tidak memiliki akses") #username tidak memiliki akses ke fungsi
+            print("Maaf anda tidak memiliki akses") #username tidak memiliki akses ke fungsi
     elif command == "batchkumpul" : #fungsi batch kumpul (F08)
         if data.role == "bandung_bondowoso" : #jika role = bandung_bondowoso maka dapat memiliki akses dan dapat mengakses fungsi
             F08.batchkumpul()
         else :
-            ("Maaf anda tidak memiliki akses")
+            print("Maaf anda tidak memiliki akses")
     elif command == "batchbangun" : #fungsi batch bangun (F08)
         if data.role == "bandung_bondowoso" : #jika role = bandung_bondowoso maka dapat memiliki akses dan dapat mengakses fungsi
             F08.batchbangun()
         else :
-            ("Maaf anda tidak memiliki akses") #username tidak memiliki akses ke fungsi
+            print("Maaf anda tidak memiliki akses") #username tidak memiliki akses ke fungsi
     elif command == "laporanjin" :
         if data.role == "bandung_bondowoso" : #jika role = bandung_bondowoso maka dapat memiliki akses dan dapat mengakses fungsi
             laporanjin()
         else :
-            ("Maaf anda tidak memiliki akses") #username tidak memiliki akses ke fungsi
+            print("Maaf anda tidak memiliki akses") #username tidak memiliki akses ke fungsi
     elif command == "laporancandi" :
         if data.role == "bandung_bondowoso" : #jika role = bandung_bondowoso maka dapat memiliki akses dan dapat mengakses fungsi
             laporancandi()
         else :
-            ("Maaf anda tidak memiliki akses") #username tidak memiliki akses ke fungsi
+            print("Maaf anda tidak memiliki akses") #username tidak memiliki akses ke fungsi
     elif command == "hancurkancandi" :
         if data.role == "roro_jonggrang" : #jika role = roro_jonggrang maka dapat memiliki akses dan dapat mengakses fungsi
             hancurkancandi()
         else :
-            ("Maaf anda tidak memiliki akses") #username tidak memiliki akses ke fungsi
+            print("Maaf anda tidak memiliki akses") #username tidak memiliki akses ke fungsi
     elif command == "ayamberkokok" :
         if data.role == "roro_jonggrang" : #jika role = roro_jonggrang maka dapat memiliki akses dan dapat mengakses fungsi
             ayamberkokok()
         else :
-            ("Maaf anda tidak memiliki akses") #username tidak memiliki akses ke fungsi
+            print("Maaf anda tidak memiliki akses") #username tidak memiliki akses ke fungsi
     elif command == "save" :
         if data.role == "bandung_bondowoso" or data.role == "roro_jonggrang" : #jika role = bandung_bondowoso atau roro_jonggrang maka dapat memiliki akses dan dapat mengakses fungsi
             folder_name = input("Masukkan nama folder: ")
@@ -99,7 +99,7 @@ def run(command : str) :
             F14.save("bahan_bangunan.csv", data.bahan_bangunan, 2, 4)
             F14.save("candi.csv", data.candi, 4, 101)
         else :
-            ("Maaf anda tidak memiliki akses") #username tidak memiliki akses ke fungsi
+            print("Maaf anda tidak memiliki akses") #username tidak memiliki akses ke fungsi
     elif command == "help" :
         F15.help()
     elif command == "exit" :

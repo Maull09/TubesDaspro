@@ -22,4 +22,3 @@ def save(file_name,var,k,b):
             f.write(str(var[i][k])+"\n")        
 
     print(f"Berhasil menyimpan data di folder {folder_name}!")
-
