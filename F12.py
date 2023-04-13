@@ -2,7 +2,7 @@ import save
 
 def ayamberkokok() :
     print("Kukuruyuk.. Kukuruyuk..")
-    jumlah_candi = save.hitung_candi()
+    jumlah_candi = save.hitung_candi() #Memanggil Fungsi hitung_candi untuk menghitung jumlah candi 
     if jumlah_candi < 100 :
         print("Selamat, Roro Jonggrang memenangkan permainan!")
         print("*Bandung Bondowoso angry noise*")
