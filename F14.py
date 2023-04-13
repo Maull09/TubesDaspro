@@ -3,7 +3,7 @@ import data
 
 
 def save(file_name,var,k,b):
-    folder_name = data.load_folder_name
+    folder_name = "save/"+ data.load_folder_name
     file_path = os.path.join(folder_name, file_name)
 
     if os.path.exists(folder_name):
