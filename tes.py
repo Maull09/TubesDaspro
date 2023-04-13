@@ -1,5 +1,5 @@
-a = "bebasi"
-b = "bebas"
+a = "tesa"
+b = "tesb"
 
 if a > b :
     print(a)
