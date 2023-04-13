@@ -7,12 +7,10 @@ def help() :
 silahkan pakai command berikut
 1. login
     Untuk masuk menggunakan akun.
-2. load
-    Untuk memuat file eksternal ke dalam. 
-3. help
+2. help
     Untuk menampilkan semua command yang dapat digunakan sesuai dengan akses yang dimiliki pemain.
-4. exit
-    Untuk keluar dari permainan.
+3. exit
+    Untuk keluar dari program dan kembali ke terminal.
 ''')
     else :
         if data.role == "bandung_bondowoso" :
@@ -37,10 +35,8 @@ silahkan pakai command berikut
 9. save
     Untuk menjalankan prosedur menyimpan data yang berada di program sesuai dengan struktur data eksternal.
 10.exit
-    Untuk keluar dari permainan
-11.load
-    Untuk memuat data yang sesuai dengan struktur data eksternal.
-12.help
+    Untuk keluar dari program dan kembali ke terminal.
+11.help
     Untuk menampilkan semua command yang dapat digunakan sesuai dengan akses yang dimiliki pemain.
 
 ''')
@@ -56,10 +52,8 @@ silahkan pakai command berikut
 4. save
     Untuk menjalankan prosedur menyimpan data yang berada di program sesuai dengan struktur data eksternal.
 5. exit
-    Untuk keluar dari permainan.
-6. load
-    Untuk memuat data yang sesuai dengan struktur data eksternal.
-7. help
+    Untuk keluar dari program dan kembali ke terminal.
+6. help
     Untuk menampilkan semua command yang dapat digunakan sesuai dengan akses yang dimiliki pemain.
     
 ''')
@@ -70,6 +64,10 @@ silahkan pakai command berikut
     Untuk keluar dari akun sekarang.
 2. kumpul
     Untuk mengumpulkan bahan-bahan yang diperlukan untuk membangun candi.
+3. help
+    Untuk menampilkan semua command yang dapat digunakan sesuai dengan akses yang dimiliki pemain.
+4. exit
+    Untuk keluar dari program dan kembali ke terminal.
 ''')
         elif data.role == "pembangun" :
             print('''
@@ -78,4 +76,8 @@ silahkan pakai command berikut
     Untuk keluar dari akun sekarang.
 2. kumpul
     Untuk membangun candi.
+3. help
+    Untuk menampilkan semua command yang dapat digunakan sesuai dengan akses yang dimiliki pemain.
+4. exit
+    Untuk keluar dari program dan kembali ke terminal.
 ''')

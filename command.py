@@ -99,14 +99,11 @@ def run(command : str) :
                 else :
                     print("Maaf anda tidak memiliki akses") #username tidak memiliki akses ke fungsi
             elif command == "save" :
-                if data.role == "bandung_bondowoso" or data.role == "roro_jonggrang" : #jika role = bandung_bondowoso atau roro_jonggrang maka dapat memiliki akses dan dapat mengakses fungsi
-                    folder_name = input("Masukkan nama folder: ")
-                    data.load_folder_name = folder_name
-                    F14.save("user.csv", data.users, 3, 101)
-                    F14.save("bahan_bangunan.csv", data.bahan_bangunan, 2, 4)
-                    F14.save("candi.csv", data.candi, 4, 101)
-                else :
-                    print("Maaf anda tidak memiliki akses") #username tidak memiliki akses ke fungsi
+                folder_name = input("Masukkan nama folder: ")
+                data.load_folder_name = folder_name
+                F14.save("user.csv", data.users, 3, 101)
+                F14.save("bahan_bangunan.csv", data.bahan_bangunan, 2, 4)
+                F14.save("candi.csv", data.candi, 4, 101)
             elif command == "help" : #fungsi help (F15)
                 F15.help()
             elif command == "exit" : #fungsi exit (F16)
