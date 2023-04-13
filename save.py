@@ -37,3 +37,26 @@ def hitung_jin(type):
         if str(i[2]) == str(type):
             cnt += 1
     return cnt
+
+def hitung_pasir( ) :
+    count = 0 
+    for i in range (1,1001) :
+        if data.candi[i][2] != 0 : 
+            count += data.candi[i][2]
+    return count 
+
+def hitung_batu( ) :
+    count = 0 
+    for i in range (1,1001) :
+        if data.candi[i][3] != 0 : 
+            count += data.candi[i][3]
+    return count 
+
+def hitung_air( ) :
+    count = 0 
+    for i in range (1,1001) :
+        if data.candi[i][4] != 0 : 
+            count += data.candi[i][4]
+    return count 
+
+
