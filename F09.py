@@ -24,22 +24,25 @@ def laporanjin() :
     # find the user with the max "candi" count
     for i in range(1, 1001):
         if int(data.users[i][3]) == max_candi :
-            if terajin is None or data.users[i][0] < terajin:
-                terajin = data.users[i][0]
+            if terajin is None or str(data.users[i][0]) < str(terajin):
+                terajin = str(data.users[i][0])
 
     # find the user with the min "candi" count
     for i in range(1, 1001):
         if int(data.users[i][3]) == min_candi :
-            if termalas is None or str(data.users[i][0]) > termalas:
-                termalas = data.users[i][0]
+            if termalas is None or str(data.users[i][0]) > str(termalas):
+                termalas = str(data.users[i][0])
 
     print("Total Jin :",total_jin)
     print("Total Jin Pengumpul :", jumlah_pengumpul)
     print("Total Jin Pembangun :", jumlah_pembangun)
-    print("Jin Terajin :", terajin)
-    print("Jin Termalas :", termalas)
+    if max_candi == 0:
+        print("Jin Terajin : -")
+        print("Jin Termalas: -")
+    else:
+        print("Jin Terajin :", terajin)
+        print("Jin Termalas :", termalas)
     print("Jumlah Pasir :", data.bahan_bangunan[1][2])
     print("Jumlah Air :", data.bahan_bangunan[2][2])
     print("Jumlah batu :", data.bahan_bangunan[3][2])
 
-                
