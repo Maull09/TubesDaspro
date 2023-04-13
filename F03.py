@@ -21,9 +21,9 @@ Jenis jin yang dapat dipanggil:
     username_jin = input("Masukkan username jin: ")
     # Mengecek apakah username sudah diambil atau belum dengan mengeceknya di data user
     for i in range(1000) :
-        if data.users[i][0] == username_jin : 
+        while data.users[i][0] == username_jin : 
             print("Username ", username_jin, " sudah diambil!")
-            username_jin = input("Masukkan username jin: ") # ???
+            username_jin = input("Masukkan username jin: ")
     # Memasukkan password dan akan terus meminta inputan sampai panjang password berjumlah 5 - 25 karakter
     for i in range(1000) :
         if data.users[i][0] == 0:
