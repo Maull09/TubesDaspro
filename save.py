@@ -5,8 +5,6 @@ def hasil_kerja_jin(name,role):
         if data.users[i][2] == role and data.users[i][0] ==name :
             data.users[i][3] = int(data.users[i][3]) + 1
 
-        
-
 def sAve(type, data1):   
     if type=="bangun":
         n = hitung_candi() #data =[id,pembuat, pasir, batu, air]
