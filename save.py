@@ -1,4 +1,6 @@
 import data
+import F13
+
 def hasil_kerja_jin(name,role):
     i = 0
     for i in range(1001) :
@@ -25,7 +27,7 @@ def rndom(depth, a, rang): #generate random number between 1--range
 
 def find_nth_role(type,n):  # finding username of nth role in user.csv
     cnt = 0
-    for i in range(data.length(data.users)):
+    for i in range(F13.length(data.users)):
         if data.users[i][2] == type :
             cnt += 1
         if cnt == n :
@@ -42,8 +44,8 @@ def hitung_candi():
 
 def hitung_jin(type):
     cnt = 0
-    for i in data.users:
-        if str(i[2]) == str(type):
+    for i in range(1001):
+        if data.users[i][2] == str(type):
             cnt += 1
     return cnt
 

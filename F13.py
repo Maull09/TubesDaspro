@@ -46,4 +46,3 @@ def reload(folder_name,file_name, var, jk):
     file_path = os.path.join(folder_name, file_name)
     var = loading(file_path, var, jk)
 
-        

@@ -7,5 +7,7 @@ def ayamberkokok() :
         print("Selamat, Roro Jonggrang memenangkan permainan!")
         print("*Bandung Bondowoso angry noise*")
         print("Roro Jonggrang dikutuk menjadi candi.")
+        exit()
     else :
         print("Yah, Bandung Bondowoso memenangkan permainan!")
+        exit()

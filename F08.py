@@ -8,14 +8,13 @@ def batchkumpul():
         batuT= 0 #batu total yang dibutuhkan
         airT = 0 #air total yang dibutuhkan
         for i in range(1,n+1):
-            jin = save.find_nth_role("pengumpul",i) #find_nth_role(type, n)
-
             depth = data.iterasi +1 
             pasirT += save.rndom(depth, depth*13, 5) #rndm(depth,a,range)
             batuT += save.rndom(depth, depth*17, 5)
             airT += save.rndom(depth, depth*19, 5)
             data.iterasi += 1
         save.sAve("kumpul", [pasirT, batuT, airT])
+        print(f"Mengerahkan {n} jin untuk mengumpulkan bahan.")
         print("Jin menemukan "+str(pasirT)+" pasir, "+str(batuT)+" batu, dan "+str(airT)+" air.")
     else:
         print("Kumpul gagal. Anda tidak punya jin pengumpul. Silahkan summon terlebih dahulu.")

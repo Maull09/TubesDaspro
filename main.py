@@ -31,8 +31,14 @@ def run(command : str) :
                 print(f"Anda belum login, silahkan login terlebih dahulu sebelum melakukan logout")        
             elif command == "help" : #fungsi help (F15)
                 F15.help()
+            elif command == "save" :
+                folder_name = input("Masukkan nama folder: ")
+                data.load_folder_name = folder_name
+                F14.save("user.csv", data.users, 3, 101)
+                F14.save("bahan_bangunan.csv", data.bahan_bangunan, 2, 4)
+                F14.save("candi.csv", data.candi, 4, 101)    
             elif command == "exit" : #fungsi exit (F16)
-                exit()
+                F16.exit()
             else :
                 print("Silahkan login dahulu untuk mengakses fungsi tersebut")
         else :
@@ -112,8 +118,7 @@ def run(command : str) :
                 F15.help()
             elif command == "exit" : #fungsi exit (F16)
                 F16.exit()
-                if data.keluar == True :
-                    exit()
+
     else :
         print("Mohon maaf tidak ada command tersebut, silahkan gunakan help mengakses list command")
             
