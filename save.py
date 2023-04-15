@@ -49,6 +49,19 @@ def hitung_jin(type):
             cnt += 1
     return cnt
 
+def length(list):
+    count = 0
+    for items in list:
+        count += 1
+    return count
+
+def strip_enter(teks):
+    result = ''
+    i = 0
+    while i <= (len(teks)-2):
+        result += teks[i]
+        i += 1
+    return result
 
 
 

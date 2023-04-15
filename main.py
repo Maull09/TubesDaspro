@@ -123,28 +123,27 @@ def run(command : str) :
         print("Mohon maaf tidak ada command tersebut, silahkan gunakan help mengakses list command")
             
             
-# File: main.py
-def load(folder_name,file_name, var, jk):
-    file_path = os.path.join(folder_name, file_name)
-    var = F13.loading(file_path, var, jk)
-    
+# File: main.py   
 if __name__ == "__main__":
     parser = argparse.ArgumentParser()
-    parser.add_argument("folder_name", help="Nama folder yang berisi file penyimpanan")
+    parser.add_argument("folder_name", nargs='?', help="Nama folder yang berisi file penyimpanan")
     args = parser.parse_args()
 
-    folder_name = "save\\"+ args.folder_name
-    if not os.path.exists(folder_name):
-        print(f"Folder \"{folder_name}\" tidak ditemukan.")
+    if args.folder_name is None:
+        print("Tidak ada nama folder yang diberikan!\nUsage: python main.py <nama_folder>")
     else:
-        print("Loading...")
-        load(folder_name,"candi.csv", data.candi, 5)
-        load(folder_name,"bahan_bangunan.csv", data.bahan_bangunan, 3)
-        load(folder_name,"user.csv", data.users, 4)
-        print("Data telah dimuat!")
-        while True:
-            masukan = input(">>> ")
-            run(masukan)
+        folder_name = args.folder_name
+        if not os.path.exists("save\\" + folder_name):
+            print(f"Folder \"{folder_name}\" tidak ditemukan.")
+        else:
+            print("Loading...")
+            F13.reload("save\\" + folder_name, "candi.csv", data.candi, 5)
+            F13.reload("save\\" + folder_name, "bahan_bangunan.csv", data.bahan_bangunan, 3)
+            F13.reload("save\\" + folder_name, "user.csv", data.users, 4)
+            print("Data telah dimuat!")
+            while True:
+                masukan = input(">>> ")
+                run(masukan)
 
 
 
