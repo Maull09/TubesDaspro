@@ -13,7 +13,7 @@ def bangun():
             save.hasil_kerja_jin(data.usernamee,"pembangun")
         else:
             save.sAve("kumpul",[pasir,batu,air])#data = [pasir, batu, air]
-            save.hasil_kerja_jin(save.find_nth_role("pembangun",1),"pembangun")
+            save.hasil_kerja_jin(data.usernamee,"pembangun")
             print("Candi berhasil dibangun.")
             print("Sisa candi yang perlu dibangun: 0.")
     else: 
