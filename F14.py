@@ -18,7 +18,9 @@ def save(file_name,var,k,b):
     with open(file_path, "w") as f: # membuka file
         for i in range(b) :
             for j in range(k) :
-                f.write(str(var[i][j])+";") # menuliskan nilai dengan diakhiri titik koma
-            f.write(str(var[i][k])+"\n") # menuliskan nilai dengan diakhiri baris baru
+                if var[i][j] != 0 :
+                    f.write(str(var[i][j])+";") # menuliskan nilai dengan diakhiri titik koma
+            if var[i][j] != 0 :        
+                f.write(str(var[i][k])+"\n") # menuliskan nilai dengan diakhiri baris baru
 
     print(f"Berhasil menyimpan data di folder {folder_name}!")

@@ -1,17 +1,11 @@
 import data
-def rndom(depth, a, rang): #generate random number between 1--range
-    b = a+2 #depth adalah jumlah iterasi atau berapa banyak angka diacak
-    res = 100
-    for i in range(depth):
-        res = (a*res+b)%rang
-    return res + 1
+import F13
+
 def hasil_kerja_jin(name,role):
     i = 0
     for i in range(1001) :
         if data.users[i][2] == role and data.users[i][0] ==name :
             data.users[i][3] = int(data.users[i][3]) + 1
-
-        
 
 def sAve(type, data1):   
     if type=="bangun":
@@ -26,7 +20,7 @@ def sAve(type, data1):
 
 def find_nth_role(type,n):  # finding username of nth role in user.csv
     cnt = 0
-    for i in range(data.length(data.users)):
+    for i in range(F13.length(data.users)):
         if data.users[i][2] == type :
             cnt += 1
         if cnt == n :
@@ -41,11 +35,24 @@ def hitung_candi():
 
 def hitung_jin(type):
     cnt = 0
-    for i in data.users:
-        if str(i[2]) == str(type):
+    for i in range(1001):
+        if data.users[i][2] == str(type):
             cnt += 1
     return cnt
 
+def length(list):
+    count = 0
+    for items in list:
+        count += 1
+    return count
+
+def strip_enter(teks):
+    result = ''
+    i = 0
+    while i <= (len(teks)-2):
+        result += teks[i]
+        i += 1
+    return result
 
 
 
