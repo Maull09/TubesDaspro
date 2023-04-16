@@ -1,5 +1,5 @@
 import data
-import F13
+
 def rndom(depth, a, rang): #generate random number between 1--range
     b = a+2 #depth adalah jumlah iterasi atau berapa banyak angka diacak
     res = 100
@@ -19,7 +19,7 @@ def missing_row():
         i += 1
 def sAve(type, data1):   
     if type=="bangun":
-        n = missing_row
+        n = missing_row()
         data.candi[n] = [data1[0]+1,data1[1],data1[2],data1[3],data1[4]] #catat bertambahnya jumlah candi
         sAve("kumpul", [-data1[2],-data1[3],-data1[4]]) #catat berkurangnya stok dengan memanggil fungsi diri sendiri sekali
     else:
@@ -30,7 +30,7 @@ def sAve(type, data1):
 
 def find_nth_role(type,n):  # finding username of nth role in user.csv
     cnt = 0
-    for i in range(F13.length(data.users)):
+    for i in range(length(data.users)):
         if data.users[i][2] == type :
             cnt += 1
         if cnt == n :
