@@ -52,7 +52,7 @@ def run(command : str) :
                     jin_pengumpul = save.hitung_jin("pengumpul")
                     jin_pembangun = save.hitung_jin("pembangun")
                     total_jin = jin_pengumpul + jin_pembangun
-                    if total_jin > 100 : #jika jumlah jin sudah 100 maka tidak bisa dilanjutkan
+                    if total_jin >= 100 : #jika jumlah jin sudah 100 maka tidak bisa dilanjutkan
                         print("Jumlah Jin telah maksimal! (100 jin). Bandung tidak dapat men-summon lebih dari itu")
                     else :
                         summonjin()
