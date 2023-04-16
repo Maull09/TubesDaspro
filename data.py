@@ -8,5 +8,6 @@ usernamee = "null"
 load_folder_name = "null"
 keluar = False
 iterasi = 0
+iterasi_candi = 0
 
 

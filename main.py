@@ -19,7 +19,6 @@ import F16
 import os
 import argparse
 import data
-import F06
 
 def run(command : str) :
     if command == "login" or command == "logout" or command == "summonjin" or command == "hapusjin" or command == "ubahjin" or command == "bangun" or command == "kumpul" or command == "batchkumpul" or command == "batchbangun" or command == "laporanjin" or command == "laporancandi" or command == "hancurkancandi" or command == "ayamberkokok" or command == "save" or command == "help" or command == "exit" :
