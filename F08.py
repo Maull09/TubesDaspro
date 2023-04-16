@@ -26,18 +26,20 @@ def batchbangun():
         pasirT=0 #pasir total yang dibutuhkan
         batuT= 0 #batu total yang dibutuhkan
         airT = 0 #air total yang dibutuhkan
-        depth =save.hitung_candi()+1
         store = [[0 for i in range(5)] for j in range(n)] #store[0] = [id, pembuat, pasir, batu, air], menyimpan record pembuatan candi
         while i<n: #iterasi pembuatan candi sebanyak n kali
+            depth = data.iterasi + 1
             pasir = save.rndom(depth, depth*13, 5) #jumlah pasir, batu, dan air yang dibutuhkan oleh suatu jin (random)
             batu = save.rndom(depth, depth*17, 5)
             air = save.rndom(depth, depth*19, 5)
-            depth += 1
             pasirT += pasir
             batuT += batu
             airT += air
-            store[i] = [i+save.hitung_candi(), save.find_nth_role("pembangun",i+1), pasir, batu, air]
-
+            depth_c = data.iterasi_candi + 1
+            rndom_num = save.rndom(depth_c, depth_c*23*123457, 999999)
+            store[i] = [rndom_num, save.find_nth_role("pembangun",i+1), pasir, batu, air]
+            data.iterasi_candi += 1
+            data.iterasi += 1
             i += 1
 
         print("Mengerahkan "+str(i)+" jin untuk membangun candi dengan total bahan "+str(pasirT)+" pasir, "+str(batuT)+" batu, dan "+str(airT)+" air.")
