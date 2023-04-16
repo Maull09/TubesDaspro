@@ -36,8 +36,10 @@ def batchbangun():
             pasirT += pasir
             batuT += batu
             airT += air
-            store[i] = [i+save.hitung_candi(), save.find_nth_role("pembangun",i+1), pasir, batu, air]
-
+            depth = data.iterasi_candi
+            rndom_num = save.rndom(depth, depth*23*123457, 999999)
+            store[i] = [rndom_num, save.find_nth_role("pembangun",i+1), pasir, batu, air]
+            data.iterasi_candi += 1
             i += 1
 
         print("Mengerahkan "+str(i)+" jin untuk membangun candi dengan total bahan "+str(pasirT)+" pasir, "+str(batuT)+" batu, dan "+str(airT)+" air.")
