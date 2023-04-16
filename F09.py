@@ -12,23 +12,23 @@ def laporanjin() :
     termalas = None
 
     #cari candi terbanyak
-    for i in range(1,1001) :
-        if int(data.users[i][3]) >= int(max_candi) and data.users[i][2] == "pembangun" and data.users[i][0] != 0  :
+    for i in range(3,1001) :
+        if int(data.users[i][3]) >= int(max_candi) and data.users[i][0] != 0  :
             max_candi = int(data.users[i][3])
 
     #mencari candi tersedikit        
-    for i in range(1,1001) :
+    for i in range(3,1001) :
         if int(data.users[i][3]) < int(min_candi) and data.users[i][2] == "pembangun" and data.users[i][0] != 0 :
             min_candi = int(data.users[i][3])
 
     # find the user with the max "candi" count
-    for i in range(1, 1001):
+    for i in range(3, 1001):
         if int(data.users[i][3]) == max_candi :
             if terajin is None or str(data.users[i][0]) < str(terajin):
                 terajin = str(data.users[i][0])
 
     # find the user with the min "candi" count
-    for i in range(1, 1001):
+    for i in range(3, 1001):
         if int(data.users[i][3]) == min_candi :
             if termalas is None or str(data.users[i][0]) > str(termalas):
                 termalas = str(data.users[i][0])
