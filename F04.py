@@ -10,7 +10,7 @@ def hapusjin() :
                 for k in range(1001) :
                     if data.users[i][0] == data.candi[k][1] :
                        data.candi[k][0] = 0 ; data.candi[k][1] = 0 ; data.candi[k][2] = 0 ; data.candi[k][3] = 0 ; data.candi[k][4] = 0 
-                for j in range(4) :
+                for j in range(5) :
                     data.users[i][j] = 0
                 print("Jin telah berhasil dihapus dari alam gaib.")
                 username_ada = True

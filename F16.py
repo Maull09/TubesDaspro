@@ -9,7 +9,7 @@ def exit():
     if ubah == "Y" or ubah == "y": # jika user input Y/y {memilih untuk menyimpan file}
         folder_name = input("Masukkan nama folder: ")
         data.load_folder_name = folder_name
-        save("user.csv", data.users, 3, 101)
+        save("user.csv", data.users, 4, 101)
         save("bahan_bangunan.csv", data.bahan_bangunan, 2, 4)
         save("candi.csv", data.candi, 4, 101)
         quit()

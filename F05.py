@@ -13,6 +13,7 @@ def ubahjin() :
                 if ubahtipe == "Y" :
                     data.users[i][2] = "pembangun"
                     print("Jin telah berhasil diubah")
+                    data.users[i][4] = 1
                     break
                 else :
                     print("Tipe jin tidak diubah")

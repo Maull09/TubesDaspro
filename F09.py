@@ -18,7 +18,7 @@ def laporanjin() :
 
     #mencari candi tersedikit        
     for i in range(3,1001) :
-        if int(data.users[i][3]) < int(min_candi) and data.users[i][2] == "pembangun" and data.users[i][0] != 0 :
+        if int(data.users[i][3]) < int(min_candi) and data.users[i][2] == "pembangun" and data.users[i][0] != 0 and int(data.users[i][4]) == 0 :
             min_candi = int(data.users[i][3])
 
     # find the user with the max "candi" count

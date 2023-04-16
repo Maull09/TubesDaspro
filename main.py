@@ -110,7 +110,7 @@ def run(command : str) :
             elif command == "save" :
                 folder_name = input("Masukkan nama folder: ")
                 data.load_folder_name = folder_name
-                F14.save("user.csv", data.users, 3, 101)
+                F14.save("user.csv", data.users, 4, 101)
                 F14.save("bahan_bangunan.csv", data.bahan_bangunan, 2, 4)
                 F14.save("candi.csv", data.candi, 4, 101)
             elif command == "help" : #fungsi help (F15)
@@ -138,7 +138,7 @@ if __name__ == "__main__":
             print("Loading...")
             F13.reload("save\\" + folder_name, "candi.csv", data.candi, 5)
             F13.reload("save\\" + folder_name, "bahan_bangunan.csv", data.bahan_bangunan, 3)
-            F13.reload("save\\" + folder_name, "user.csv", data.users, 4)
+            F13.reload("save\\" + folder_name, "user.csv", data.users, 5)
             print("Data telah dimuat!")
             while True:
                 masukan = input(">>> ")
