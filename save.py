@@ -3,9 +3,14 @@ import data
 def rndom(depth, a, rang): #generate random number between 1--range
     b = a+2 #depth adalah jumlah iterasi atau berapa banyak angka diacak
     res = 100
-    for i in range(depth):
-        res = (a*res+b)%rang
-    return res + 1
+    if (a/depth==13) or (a/depth==17) or (a/depth==19) : #Khusus batch kumpul range = 0--5
+        for i in range(depth):
+            res = (a*res+b)%(rang+1)
+        return res
+    else:
+        for i in range(depth): #yang lain range = 1--rang
+            res = (a*res+b)%rang
+        return res + 1
 
 def hasil_kerja_jin(name,role):
     i = 0
