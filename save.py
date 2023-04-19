@@ -6,17 +6,20 @@ def rndom(depth, a, rang): #generate random number between 1--range
     for i in range(depth):
         res = (a*res+b)%rang
     return res + 1
+
 def hasil_kerja_jin(name,role):
     i = 0
     for i in range(1001) :
         if data.users[i][2] == role and data.users[i][0] ==name :
             data.users[i][3] = int(data.users[i][3]) + 1
+
 def missing_row():
     i = 0 
     while True :
         if data.candi[i][0] == 0:
             return i
         i += 1
+
 def sAve(type, data1):   
     if type=="bangun":
         n = missing_row()
@@ -35,6 +38,7 @@ def find_nth_role(type,n):  # finding username of nth role in user.csv
             cnt += 1
         if cnt == n :
             return data.users[i][0]
+        
 def hitung_candi(): 
     cnt = 0
     for i in range(1,1000):
