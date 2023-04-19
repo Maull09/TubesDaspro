@@ -3,8 +3,8 @@ import data
 
 
 def save(file_name,var,k,b):
-    folder_name = "save/"+ data.load_folder_name
-    file_path = os.path.join(folder_name, file_name)
+    folder_name = "save/"+ data.load_folder_name #mengambil path nama folder
+    file_path = os.path.join(folder_name, file_name) #menggabungkan path nama folder dan nama file
 
     if os.path.exists(folder_name): # jika folder dengan nama hasil input ada di database folder
         if os.path.exists(file_path): # jika file dengan nama hasil input ada di database file

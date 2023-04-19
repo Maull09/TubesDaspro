@@ -13,7 +13,6 @@ def rndom(depth, a, rang): #generate random number between 1--range
         return res + 1
 
 def hasil_kerja_jin(name,role):
-    i = 0
     for i in range(1001) :
         if data.users[i][2] == role and data.users[i][0] ==name :
             data.users[i][3] = int(data.users[i][3]) + 1

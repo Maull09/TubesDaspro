@@ -1,7 +1,7 @@
 import data
 
 def help() :
-    if data.login_status == "false" :
+    if data.login_status == "false" : #help untuk yang belum login
         print('''
 ================Help================
 silahkan pakai command berikut
@@ -14,8 +14,8 @@ silahkan pakai command berikut
 4. exit
     Untuk keluar dari program dan kembali ke terminal.
 ''')
-    else :
-        if data.role == "bandung_bondowoso" :
+    else : #help untuk yang sudah login
+        if data.role == "bandung_bondowoso" : #help untuk role bandung bondowoso
             print('''
 ================Help================
 1. logout
@@ -42,7 +42,7 @@ silahkan pakai command berikut
     Untuk menampilkan semua command yang dapat digunakan sesuai dengan akses yang dimiliki pemain.
 
 ''')
-        elif data.role == "roro_jonggrang" :
+        elif data.role == "roro_jonggrang" : #help untuk role roro jonggrang
             print('''
 ================Help================
 1. logout
@@ -59,7 +59,7 @@ silahkan pakai command berikut
     Untuk menampilkan semua command yang dapat digunakan sesuai dengan akses yang dimiliki pemain.
     
 ''')
-        elif data.role == "pengumpul" :
+        elif data.role == "pengumpul" : #help untuk role jin pengumpul
             print('''
 ================Help================
 1. logout
@@ -73,7 +73,7 @@ silahkan pakai command berikut
 5. exit
     Untuk keluar dari program dan kembali ke terminal.
 ''')
-        elif data.role == "pembangun" :
+        elif data.role == "pembangun" : #help untuk role jin pembangun
             print('''
 ================Help================
 1. logout
