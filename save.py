@@ -30,7 +30,7 @@ def sAve(type, data1):
 
 def find_nth_role(type,n):  # finding username of nth role in user.csv
     cnt = 0
-    for i in range(length(data.users)):
+    for i in range(1001):
         if data.users[i][2] == type :
             cnt += 1
         if cnt == n :
