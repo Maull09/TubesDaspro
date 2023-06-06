@@ -2,9 +2,9 @@ import data
 
 def hancurkancandi():
     candi_ketemu = True
-    id = input("Masukkan ID candi: ") # meminta input id candi dari user
-    for x in range (1001):
-        if data.candi[x][0] == id: # jika ada data id sesuai inputan user
+    id = int(input("Masukkan ID candi: ")) # meminta input id candi dari user
+    for x in range (1,1001):
+        if int(data.candi[x][0]) == id: # jika ada data id sesuai inputan user
             yakin = input(f"Apakah anda yakin ingin menghancurkan candi ID: {id} (Y/N)?") # meminta input apakah user mau menghancurkan candi atau tidak
             if yakin == "Y" or yakin == "y": # jika user ingin menghancurkan candi
                 for i in range(1001) :
